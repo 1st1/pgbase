@@ -13,8 +13,6 @@ from libc.stdint cimport (
 )
 
 
-from .pgbase.inc.debug cimport PG_DEBUG
-
 include "./inc/consts.pxi"
 include "./inc/buffer.pxd"
 

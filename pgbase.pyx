@@ -14,11 +14,12 @@ from .pgbase.inc.python cimport (
     PyByteArray_Size, PyByteArray_Resize,
     PyByteArray_FromStringAndSize,
     PyUnicode_FromKindAndData, PyUnicode_4BYTE_KIND,
-    PyUnicode_FromString
+    PyUnicode_FromString, PyUnicode_FromStringAndSize
 )
 
 
 from .pgbase.inc cimport hton
+from .pgbase.inc.debug cimport PG_DEBUG
 
 
 include "./inc/consts.pxi"
